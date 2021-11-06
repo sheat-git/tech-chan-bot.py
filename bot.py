@@ -152,7 +152,9 @@ def makeContent(message, Ousers, Xusers):
     text += '\n出席 :o:'
     if haveUsers(Ousers):
         text += toText(Ousers)
-    text += '\n欠席 :x:'
+    else:
+        text += '\n'
+    text += '欠席 :x:'
     if haveUsers(Xusers):
         text += toText(Xusers)
     return text
