@@ -23,7 +23,7 @@ teamRoleIds = {654258617188483073:'コンサート', 654259540732280877:'コン�
             required=True
         )
     ])
-async def _attend(ctx: SlashContext, *, arg):
+async def _attend(ctx: SlashContext, title):
     text = \
         f'__**{arg}**の出欠確認__\n' +\
         '出席 :o:\n' +\
