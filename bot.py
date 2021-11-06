@@ -25,7 +25,7 @@ teamRoleIds = {654258617188483073:'コンサート', 654259540732280877:'コン�
     ])
 async def _attend(ctx: SlashContext, title):
     text = \
-        f'__**{arg}**の出欠確認__\n' +\
+        f'__**{title}** の出欠確認__\n' +\
         '出席 :o:\n' +\
         '欠席 :x:'
     message = await ctx.send(content=text)
@@ -35,7 +35,7 @@ async def _attend(ctx: SlashContext, title):
 @bot.command()
 async def attend(ctx, *, arg):
     text = \
-        f'__**{arg}**の出欠確認__\n' +\
+        f'__**{arg}** の出欠確認__\n' +\
         '出席 :o:\n' +\
         '欠席 :x:'
     message = await ctx.send(content=text)
