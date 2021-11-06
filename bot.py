@@ -144,7 +144,7 @@ def makeContent(message, Ousers, Xusers):
                 text += f'{gen}  {pList[0].name}\n'
                 if len(pList) == 1:
                     continue
-                for p in pList:
+                for p in pList[1:]:
                     text += f'    {p.name}\n'
         return text[:-1] + '```'
     
